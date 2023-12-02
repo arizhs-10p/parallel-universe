@@ -1,0 +1,86 @@
+23:03:44.378 [main] INFO  - Driver initiated
+23:03:45.452 [main] INFO  - Title verified
+23:03:53.670 [main] INFO  - Driver initiated
+23:03:55.950 [main] INFO  - Title verified
+00:36:39.760 [main] INFO  - Chrome browser initiated from base class
+00:36:39.917 [main] INFO  - Chrome browser maximize from base class
+00:36:39.923 [main] INFO  - Driver initiated
+00:36:40.799 [main] INFO  - Title verified
+00:36:44.803 [main] INFO  - Chrome browser initiated from base class
+00:36:44.941 [main] INFO  - Chrome browser maximize from base class
+00:36:48.109 [main] INFO  - Chrome browser initiated from base class
+00:36:48.239 [main] INFO  - Chrome browser maximize from base class
+00:36:48.241 [main] INFO  - Driver initiated
+00:36:53.399 [main] INFO  - Title verified
+01:06:04.304 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:06:06.551 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:06:17.240 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:06:18.027 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:06:27.472 [TestNG-test=Firefox Test-1] INFO  - Driver initiated
+01:06:28.393 [TestNG-test=Firefox Test-1] INFO  - Title verified
+01:06:42.066 [TestNG-test=Firefox Test-1] INFO  - Driver initiated
+01:06:42.835 [TestNG-test=Firefox Test-1] INFO  - Title verified
+01:08:07.699 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:08:08.716 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:08:16.196 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:08:17.103 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:08:24.442 [TestNG-test=Firefox Test-1] INFO  - Driver initiated
+01:08:25.221 [TestNG-test=Firefox Test-1] INFO  - Title verified
+01:08:38.372 [TestNG-test=Firefox Test-1] INFO  - Driver initiated
+01:08:39.186 [TestNG-test=Firefox Test-1] INFO  - Title verified
+01:10:07.034 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:10:07.799 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:10:15.794 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:10:16.640 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:11:12.644 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:11:13.521 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:11:27.663 [TestNG-test=Chrome Test-1] INFO  - Driver initiated
+01:11:28.503 [TestNG-test=Chrome Test-1] INFO  - Title verified
+01:14:18.905 [TestNG-test=Test-1] INFO  - Driver initiated
+01:14:20.000 [TestNG-test=Test-1] INFO  - Title verified
+01:14:37.320 [TestNG-test=Test-1] INFO  - Driver initiated
+01:14:38.159 [TestNG-test=Test-1] INFO  - Title verified
+01:17:23.303 [TestNG-test=Test-1] INFO  - Driver initiated
+01:17:24.300 [TestNG-test=Test-1] INFO  - Title verified
+01:17:32.124 [TestNG-test=Test-1] INFO  - Driver initiated
+01:17:32.825 [TestNG-test=Test-1] INFO  - Title verified
+01:18:32.011 [TestNG-test=Test-1] INFO  - Driver initiated
+01:18:32.852 [TestNG-test=Test-1] INFO  - Title verified
+01:18:46.381 [TestNG-test=Test-1] INFO  - Driver initiated
+01:18:47.164 [TestNG-test=Test-1] INFO  - Title verified
+01:30:55.585 [TestNG-test=Test-1] INFO  - Driver initiated
+01:30:56.663 [TestNG-test=Test-1] INFO  - Title verified
+01:31:13.760 [TestNG-test=Test-1] INFO  - Driver initiated
+01:31:14.578 [TestNG-test=Test-1] INFO  - Title verified
+01:33:05.738 [TestNG-test=Test-1] INFO  - Driver initiated
+01:33:06.633 [TestNG-test=Test-1] INFO  - Title verified
+01:33:20.793 [TestNG-test=Test-1] INFO  - Driver initiated
+01:33:21.610 [TestNG-test=Test-1] INFO  - Title verified
+01:47:27.518 [TestNG-test=Test-1] INFO  - Driver initiated
+01:47:28.343 [TestNG-test=Test-1] INFO  - Title verified
+01:47:45.660 [TestNG-test=Test-1] INFO  - Driver initiated
+01:47:46.442 [TestNG-test=Test-1] INFO  - Title verified
+01:49:53.594 [TestNG-test=Test-1] INFO  - Driver initiated
+01:49:54.465 [TestNG-test=Test-1] INFO  - Title verified
+01:50:08.829 [TestNG-test=Test-1] INFO  - Driver initiated
+01:50:09.669 [TestNG-test=Test-1] INFO  - Title verified
+02:00:59.825 [TestNG-test=Test-1] INFO  - Driver initiated
+02:01:00.921 [TestNG-test=Test-1] INFO  - Title verified
+02:01:17.442 [TestNG-test=Test-1] INFO  - Driver initiated
+02:01:18.254 [TestNG-test=Test-1] INFO  - Title verified
+02:03:48.011 [TestNG-test=Test-1] INFO  - Driver initiated
+02:03:48.823 [TestNG-test=Test-1] INFO  - Title verified
+02:04:02.750 [TestNG-test=Test-1] INFO  - Driver initiated
+02:04:03.605 [TestNG-test=Test-1] INFO  - Title verified
+12:48:29.504 [TestNG-test=Test-1] INFO  - Driver initiated
+12:48:30.890 [TestNG-test=Test-1] INFO  - Title verified
+12:48:42.949 [TestNG-test=Test-1] INFO  - Driver initiated
+12:48:45.176 [TestNG-test=Test-1] INFO  - Title verified
+12:49:17.502 [TestNG-test=Test-1] INFO  - Driver initiated
+12:49:18.213 [TestNG-test=Test-1] INFO  - Title verified
+12:49:28.969 [TestNG-test=Test-1] INFO  - Driver initiated
+12:49:29.671 [TestNG-test=Test-1] INFO  - Title verified
+18:57:13.783 [TestNG-test=Test-1] INFO  - Driver initiated
+18:57:16.374 [TestNG-test=Test-1] INFO  - Title verified
+18:57:26.647 [TestNG-test=Test-1] INFO  - Driver initiated
+18:57:29.624 [TestNG-test=Test-1] INFO  - Title verified
