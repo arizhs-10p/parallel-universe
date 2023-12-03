@@ -33,7 +33,7 @@ public class BaseClass {
     protected ExtentReports extent;
     protected ExtentTest logger;
     @BeforeMethod
-    @Parameters("browser")
+   /* @Parameters("browser")
     public void parameterizedTest(String browser) {
         if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
@@ -49,7 +49,9 @@ public class BaseClass {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
-    /*
+
+    */
+
         public void setupBrowser(){
         log = LogManager.getLogger(SauceDemoWebTest.class);
         //Reporter.log("Browser session started",true);
@@ -76,8 +78,6 @@ public class BaseClass {
 //        //htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 //        htmlReporter.config().setTheme(Theme.STANDARD);
     }
-
-     */
 
 
     @BeforeClass
