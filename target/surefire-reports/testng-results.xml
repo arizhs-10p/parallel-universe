@@ -1,59 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T03:01:24 PKT" name="Suite" finished-at="2023-12-04T03:01:52 PKT" duration-ms="27640">
+  <suite started-at="2023-12-04T03:15:03 PKT" name="Suite" finished-at="2023-12-04T03:15:06 PKT" duration-ms="3099">
     <groups>
     </groups>
-    <test started-at="2023-12-04T03:01:24 PKT" name="Test" finished-at="2023-12-04T03:01:52 PKT" duration-ms="27640">
+    <test started-at="2023-12-04T03:15:03 PKT" name="Test" finished-at="2023-12-04T03:15:06 PKT" duration-ms="3099">
       <class name="com.parallel.universe.tests.SauceDemoWebTest">
-        <test-method is-config="true" signature="setupExtentReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:24 PKT" name="setupExtentReport" finished-at="2023-12-04T03:01:24 PKT" duration-ms="367" status="PASS">
+        <test-method is-config="true" signature="setupExtentReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:03 PKT" name="setupExtentReport" finished-at="2023-12-04T03:15:03 PKT" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtentReport -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:24 PKT" name="setupBrowser" finished-at="2023-12-04T03:01:30 PKT" duration-ms="5370" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method signature="loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:30 PKT" name="loginTest" finished-at="2023-12-04T03:01:33 PKT" duration-ms="2780" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:33 PKT" name="getResult" finished-at="2023-12-04T03:01:33 PKT" duration-ms="375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=SauceDemoWebTest.loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:33 PKT" name="setupBrowser" finished-at="2023-12-04T03:01:35 PKT" duration-ms="2188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupBrowser -->
-        <test-method signature="loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:35 PKT" name="loginTestFailed" finished-at="2023-12-04T03:01:36 PKT" duration-ms="670" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:03 PKT" name="setupBrowser" finished-at="2023-12-04T03:15:05 PKT" duration-ms="2032" status="FAIL">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
             <message>
-              <![CDATA[expected [Swag Lab] but found [Swag Labs]]]>
+              <![CDATA[chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Swag Lab] but found [Swag Labs]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.parallel.universe.tests.SauceDemoWebTest.loginTestFailed(SauceDemoWebTest.java:64)
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at com.parallel.universe.base.BaseClass.setupBrowser(BaseClass.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
@@ -65,41 +54,172 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTestFailed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:36 PKT" name="getResult" finished-at="2023-12-04T03:01:36 PKT" duration-ms="305" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginTestFailed status=FAILURE method=SauceDemoWebTest.loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:36 PKT" name="setupBrowser" finished-at="2023-12-04T03:01:38 PKT" duration-ms="2115" status="PASS">
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:38 PKT" name="productSelect" finished-at="2023-12-04T03:01:51 PKT" duration-ms="12519" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="loginTest" finished-at="2023-12-04T03:15:05 PKT" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at com.parallel.universe.base.BaseClass.setupBrowser(BaseClass.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- productSelect -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:51 PKT" name="getResult" finished-at="2023-12-04T03:01:51 PKT" duration-ms="377" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=productSelect status=SUCCESS method=SauceDemoWebTest.productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="getResult" finished-at="2023-12-04T03:15:05 PKT" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:01:51 PKT" name="endReport" finished-at="2023-12-04T03:01:52 PKT" duration-ms="502" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="setupBrowser" finished-at="2023-12-04T03:15:05 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="loginTestFailed" finished-at="2023-12-04T03:15:05 PKT" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at com.parallel.universe.base.BaseClass.setupBrowser(BaseClass.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestFailed -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="getResult" finished-at="2023-12-04T03:15:05 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="setupBrowser" finished-at="2023-12-04T03:15:05 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="productSelect" finished-at="2023-12-04T03:15:05 PKT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.remote.NoSuchDriverException">
+            <message>
+              <![CDATA[chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.NoSuchDriverException: chromedriver located at C:\windows\system32\config\systemprofile\.cache\selenium\chromedriver\win64\119.0.6045.105\chromedriver.exe, but invalid
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location/
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: driver.version: ChromeDriver
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:45)
+at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
+at org.openqa.selenium.chrome.ChromeDriver.generateExecutor(ChromeDriver.java:99)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at com.parallel.universe.base.BaseClass.setupBrowser(BaseClass.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:577)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.NoSuchDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSelect -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="getResult" finished-at="2023-12-04T03:15:05 PKT" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-04T03:15:05 PKT" name="endReport" finished-at="2023-12-04T03:15:06 PKT" duration-ms="577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->

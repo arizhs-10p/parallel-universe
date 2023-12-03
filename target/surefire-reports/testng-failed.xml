@@ -8,6 +8,8 @@
           <include name="loginTestFailed"/>
           <include name="getResult"/>
           <include name="setupExtentReport"/>
+          <include name="loginTest"/>
+          <include name="productSelect"/>
           <include name="endReport"/>
           <include name="setupBrowser"/>
         </methods>
