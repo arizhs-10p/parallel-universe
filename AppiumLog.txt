@@ -1,6 +1,6 @@
-2023-12-04 19:29:28:139 [Appium] Welcome to Appium v2.1.3
-2023-12-04 19:29:28:147 [Appium] Non-default server args:
-2023-12-04 19:29:28:156 [Appium] { address: '127.0.0.1', localTimezone: true }
-2023-12-04 19:29:28:335 [Appium] Appium REST http interface listener started on http://127.0.0.1:4723
-2023-12-04 19:29:28:341 [Appium] No drivers have been installed in C:\windows\system32\config\systemprofile\.appium. Use the "appium driver" command to install the one(s) you want to use.
-2023-12-04 19:29:28:345 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2023-12-04 20:21:52:150 [Appium] Welcome to Appium v2.1.3
+2023-12-04 20:21:52:165 [Appium] Non-default server args:
+2023-12-04 20:21:52:172 [Appium] { address: '127.0.0.1', localTimezone: true }
+2023-12-04 20:21:52:311 [Appium] Appium REST http interface listener started on http://127.0.0.1:4723
+2023-12-04 20:21:52:313 [Appium] No drivers have been installed in C:\windows\system32\config\systemprofile\.appium. Use the "appium driver" command to install the one(s) you want to use.
+2023-12-04 20:21:52:326 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.

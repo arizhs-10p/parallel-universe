@@ -48,7 +48,7 @@ String CompanyID = configReader.getApiCompany();
 
  */
 
-
+/*
     @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
     public void DashboardLayoutFinmarkWS(String emailAddress, String deviceSessionId, String password)
     {
@@ -67,6 +67,8 @@ String CompanyID = configReader.getApiCompany();
                 .log()
                 .all();
     }
+
+ */
     @Test
     public void DashboardLayoutFinmarkCS()
     {

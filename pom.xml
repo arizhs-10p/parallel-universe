@@ -17,6 +17,7 @@
                     <suiteXmlFiles>
                        <suiteXmlFile>testng.xml</suiteXmlFile>
                         <suiteXmlFile>testngAndroidAppium.xml</suiteXmlFile>
+                        <suiteXmlFile>testngApi.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                 </configuration>

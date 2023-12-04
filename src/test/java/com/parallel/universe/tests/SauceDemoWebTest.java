@@ -59,7 +59,7 @@ public class SauceDemoWebTest extends BaseClass {
         driver.get(Url3);
        logger.fail("Sauce Demo, Login UnSuccessful because of wrong title");
         // Verify the title
-        String expectedTitle = "Swag Lab";
+        String expectedTitle = "Swag Labs";
         String actualTitle = driver.getTitle();
         Assert.assertEquals(actualTitle, expectedTitle);
         // Perform login
@@ -75,7 +75,7 @@ public class SauceDemoWebTest extends BaseClass {
     public void productSelect() throws InterruptedException {
         loginTest();
         ProductPage productPage = new ProductPage(driver);
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         productPage.setProductSelect();
 
     }
