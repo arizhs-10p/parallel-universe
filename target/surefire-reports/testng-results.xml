@@ -1,21 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T15:50:06 PKT" name="Suite" finished-at="2023-12-04T15:50:34 PKT" duration-ms="27934">
+  <suite started-at="2023-12-04T15:52:24 PKT" name="Suite" finished-at="2023-12-04T15:52:35 PKT" duration-ms="11484">
     <groups>
     </groups>
-    <test started-at="2023-12-04T15:50:06 PKT" name="Test" finished-at="2023-12-04T15:50:34 PKT" duration-ms="27934">
+    <test started-at="2023-12-04T15:52:24 PKT" name="Test" finished-at="2023-12-04T15:52:35 PKT" duration-ms="11484">
       <class name="com.parallel.universe.tests.AppiumTestScenarios">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@385c9627]" started-at="2023-12-04T15:50:06 PKT" name="beforeMethod" finished-at="2023-12-04T15:50:15 PKT" duration-ms="8833" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@385c9627]" started-at="2023-12-04T15:52:24 PKT" name="beforeMethod" finished-at="2023-12-04T15:52:33 PKT" duration-ms="9155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="PreferenceTest()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@385c9627]" started-at="2023-12-04T15:50:15 PKT" name="PreferenceTest" finished-at="2023-12-04T15:50:33 PKT" duration-ms="18030" status="PASS">
+        <test-method signature="PreferenceTest()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@385c9627]" started-at="2023-12-04T15:52:33 PKT" name="PreferenceTest" finished-at="2023-12-04T15:52:35 PKT" duration-ms="2210" status="FAIL">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName 'uiautomator2' and platformName 'ANDROID'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps) 
+Host info: host: 'MININT-6SH45PE', ip: '192.168.100.8'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\Administrator\seleniumWD\parallel-universe\src\ApiDemos-debug.apk, appium:automationName=uiautomator2, appium:deviceName=emulator-5554, platformName=ANDROID}], desiredCapabilities=Capabilities {app: C:\Users\Administrator\sele..., automationName: uiautomator2, deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {app: C:\Users\Administrator\sele..., automationName: uiautomator2, deviceName: emulator-5554, platformName: ANDROID}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Could not find a driver for automationName 'uiautomator2' and platformName 'ANDROID'. Have you installed a driver that supports those capabilities? Run 'appium driver list --installed' to see. (Lower-level error: Could not find installed driver to support given caps) 
+Host info: host: 'MININT-6SH45PE', ip: '192.168.100.8'
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:app=C:\Users\Administrator\seleniumWD\parallel-universe\src\ApiDemos-debug.apk, appium:automationName=uiautomator2, appium:deviceName=emulator-5554, platformName=ANDROID}], desiredCapabilities=Capabilities {app: C:\Users\Administrator\sele..., automationName: uiautomator2, deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {app: C:\Users\Administrator\sele..., automationName: uiautomator2, deviceName: emulator-5554, platformName: ANDROID}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at com.parallel.universe.base.BaseAppium.desiredCapabilities(BaseAppium.java:43)
+at com.parallel.universe.tests.AppiumTestScenarios.PreferenceTest(AppiumTestScenarios.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PreferenceTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@385c9627]" started-at="2023-12-04T15:50:33 PKT" name="afterMethod" finished-at="2023-12-04T15:50:34 PKT" duration-ms="997" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@385c9627]" started-at="2023-12-04T15:52:35 PKT" name="afterMethod" finished-at="2023-12-04T15:52:35 PKT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.androidDriver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.android.AndroidDriver.quit()" because "this.androidDriver" is null
+at com.parallel.universe.base.BaseAppium.afterMethod(BaseAppium.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:810)
+at org.testng.internal.invokers.TestInvoker.runAfterConfigurations(TestInvoker.java:779)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:755)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
