@@ -178,3 +178,23 @@
 14:29:33.148 [TestNG-test=Test-1] INFO  - Chrome browser maximize from base class
 14:29:33.148 [TestNG-test=Test-1] INFO  - Driver initiated
 14:29:33.818 [TestNG-test=Test-1] INFO  - Title verified
+14:39:55.132 [main] INFO  - Chrome browser initiated from base class
+14:39:55.285 [main] INFO  - Chrome browser maximize from base class
+14:39:55.292 [main] INFO  - Driver initiated
+14:39:56.317 [main] INFO  - Title verified
+14:40:01.327 [main] INFO  - Chrome browser initiated from base class
+14:40:01.463 [main] INFO  - Chrome browser maximize from base class
+14:40:04.637 [main] INFO  - Chrome browser initiated from base class
+14:40:04.761 [main] INFO  - Chrome browser maximize from base class
+14:40:04.762 [main] INFO  - Driver initiated
+14:40:05.494 [main] INFO  - Title verified
+14:41:55.658 [main] INFO  - Chrome browser initiated from base class
+14:41:55.811 [main] INFO  - Chrome browser maximize from base class
+14:41:55.821 [main] INFO  - Driver initiated
+14:41:56.575 [main] INFO  - Title verified
+14:42:00.455 [main] INFO  - Chrome browser initiated from base class
+14:42:00.596 [main] INFO  - Chrome browser maximize from base class
+14:42:03.643 [main] INFO  - Chrome browser initiated from base class
+14:42:03.775 [main] INFO  - Chrome browser maximize from base class
+14:42:03.778 [main] INFO  - Driver initiated
+14:42:04.506 [main] INFO  - Title verified
