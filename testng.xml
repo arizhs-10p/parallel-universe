@@ -5,7 +5,7 @@
        <!-- <parameter name="browser" value="chrome" /> -->
         <classes>
           <class name="com.parallel.universe.tests.SauceDemoWebTest"/>
-            <!--<class name="com.parallel.universe.tests.APITestScenarios"/>-->
+            <class name="com.parallel.universe.tests.APITestScenarios"/>
           <!--<class name="com.parallel.universe.tests.AppiumTestScenarios"/>-->
         </classes>
     </test>

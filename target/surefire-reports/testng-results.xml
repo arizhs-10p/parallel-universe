@@ -1,130 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-04T20:46:51 PKT" name="Suite" finished-at="2023-12-04T20:47:34 PKT" duration-ms="43216">
+  <suite started-at="2023-12-10T14:22:26 PKT" name="Suite" finished-at="2023-12-10T14:23:00 PKT" duration-ms="34313">
     <groups>
     </groups>
-    <test started-at="2023-12-04T20:46:51 PKT" name="Test" finished-at="2023-12-04T20:47:34 PKT" duration-ms="43216">
+    <test started-at="2023-12-10T14:22:26 PKT" name="Test" finished-at="2023-12-10T14:23:00 PKT" duration-ms="34313">
       <class name="com.parallel.universe.tests.SauceDemoWebTest">
-        <test-method is-config="true" signature="setupExtentReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:46:51 PKT" name="setupExtentReport" finished-at="2023-12-04T20:46:51 PKT" duration-ms="447" status="PASS">
+        <test-method is-config="true" signature="setupExtentReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:26 PKT" name="setupExtentReport" finished-at="2023-12-10T14:22:27 PKT" duration-ms="727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupExtentReport -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:46:51 PKT" name="setupBrowser" finished-at="2023-12-04T20:46:59 PKT" duration-ms="7590" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:27 PKT" name="setupBrowser" finished-at="2023-12-10T14:22:37 PKT" duration-ms="10340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:46:59 PKT" name="loginTest" finished-at="2023-12-04T20:47:14 PKT" duration-ms="14768" status="PASS">
+        <test-method signature="loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:37 PKT" name="loginTest" finished-at="2023-12-10T14:22:40 PKT" duration-ms="2732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:14 PKT" name="getResult" finished-at="2023-12-04T20:47:14 PKT" duration-ms="417" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:40 PKT" name="getResult" finished-at="2023-12-10T14:22:40 PKT" duration-ms="408" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=SauceDemoWebTest.loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=SauceDemoWebTest.loginTest()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:14 PKT" name="setupBrowser" finished-at="2023-12-04T20:47:18 PKT" duration-ms="3758" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:40 PKT" name="setupBrowser" finished-at="2023-12-10T14:22:44 PKT" duration-ms="3848" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:18 PKT" name="loginTestFailed" finished-at="2023-12-04T20:47:21 PKT" duration-ms="3000" status="PASS">
+        <test-method signature="loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:44 PKT" name="loginTestFailed" finished-at="2023-12-10T14:22:46 PKT" duration-ms="2168" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestFailed -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:21 PKT" name="getResult" finished-at="2023-12-04T20:47:21 PKT" duration-ms="307" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:46 PKT" name="getResult" finished-at="2023-12-10T14:22:46 PKT" duration-ms="395" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTestFailed status=SUCCESS method=SauceDemoWebTest.loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274] output={null}]]]>
+                <![CDATA[[TestResult name=loginTestFailed status=SUCCESS method=SauceDemoWebTest.loginTestFailed()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:21 PKT" name="setupBrowser" finished-at="2023-12-04T20:47:25 PKT" duration-ms="3455" status="PASS">
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:47 PKT" name="setupBrowser" finished-at="2023-12-10T14:22:50 PKT" duration-ms="3389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupBrowser -->
-        <test-method signature="productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:25 PKT" name="productSelect" finished-at="2023-12-04T20:47:33 PKT" duration-ms="8221" status="PASS">
+        <test-method signature="productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:50 PKT" name="productSelect" finished-at="2023-12-10T14:22:58 PKT" duration-ms="7720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productSelect -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:33 PKT" name="getResult" finished-at="2023-12-04T20:47:33 PKT" duration-ms="500" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:58 PKT" name="getResult" finished-at="2023-12-10T14:22:59 PKT" duration-ms="1243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productSelect status=SUCCESS method=SauceDemoWebTest.productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274] output={null}]]]>
+                <![CDATA[[TestResult name=productSelect status=SUCCESS method=SauceDemoWebTest.productSelect()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@28701274]" started-at="2023-12-04T20:47:33 PKT" name="endReport" finished-at="2023-12-04T20:47:34 PKT" duration-ms="661" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.parallel.universe.tests.SauceDemoWebTest@6b2ea799]" started-at="2023-12-10T14:22:59 PKT" name="endReport" finished-at="2023-12-10T14:23:00 PKT" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.parallel.universe.tests.SauceDemoWebTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2023-12-04T20:47:55 PKT" name="Suite (1)" finished-at="2023-12-04T20:48:08 PKT" duration-ms="12521">
-    <groups>
-    </groups>
-    <test started-at="2023-12-04T20:47:55 PKT" name="Test" finished-at="2023-12-04T20:48:08 PKT" duration-ms="12521">
-      <class name="com.parallel.universe.tests.APITestScenarios">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.parallel.universe.tests.APITestScenarios@f79e]" started-at="2023-12-04T20:47:55 PKT" name="beforeMethod" finished-at="2023-12-04T20:48:02 PKT" duration-ms="7019" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="DashboardLayoutFinmarkCS()[pri:0, instance:com.parallel.universe.tests.APITestScenarios@f79e]" started-at="2023-12-04T20:48:02 PKT" name="DashboardLayoutFinmarkCS" finished-at="2023-12-04T20:48:04 PKT" duration-ms="1832" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DashboardLayoutFinmarkCS -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.parallel.universe.tests.APITestScenarios@f79e]" started-at="2023-12-04T20:48:04 PKT" name="afterMethod" finished-at="2023-12-04T20:48:04 PKT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.parallel.universe.tests.APITestScenarios@f79e]" started-at="2023-12-04T20:48:04 PKT" name="beforeMethod" finished-at="2023-12-04T20:48:06 PKT" duration-ms="2049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="DashboardLayoutWithAssert()[pri:0, instance:com.parallel.universe.tests.APITestScenarios@f79e]" started-at="2023-12-04T20:48:06 PKT" name="DashboardLayoutWithAssert" finished-at="2023-12-04T20:48:08 PKT" duration-ms="1600" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DashboardLayoutWithAssert -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.parallel.universe.tests.APITestScenarios@f79e]" started-at="2023-12-04T20:48:08 PKT" name="afterMethod" finished-at="2023-12-04T20:48:08 PKT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.parallel.universe.tests.APITestScenarios -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite (1) -->
-  <suite started-at="2023-12-04T20:47:34 PKT" name="Suite (0)" finished-at="2023-12-04T20:47:55 PKT" duration-ms="21008">
-    <groups>
-    </groups>
-    <test started-at="2023-12-04T20:47:34 PKT" name="Test" finished-at="2023-12-04T20:47:55 PKT" duration-ms="21008">
-      <class name="com.parallel.universe.tests.AppiumTestScenarios">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@75db5df9]" started-at="2023-12-04T20:47:34 PKT" name="beforeMethod" finished-at="2023-12-04T20:47:34 PKT" duration-ms="96" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="PreferenceTest()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@75db5df9]" started-at="2023-12-04T20:47:34 PKT" name="PreferenceTest" finished-at="2023-12-04T20:47:54 PKT" duration-ms="19543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PreferenceTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.parallel.universe.tests.AppiumTestScenarios@75db5df9]" started-at="2023-12-04T20:47:54 PKT" name="afterMethod" finished-at="2023-12-04T20:47:55 PKT" duration-ms="1364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.parallel.universe.tests.AppiumTestScenarios -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite (0) -->
 </testng-results>
