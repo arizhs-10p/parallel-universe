@@ -1,5 +1,6 @@
 package com.parallel.universe.tests;
 
+import com.aventstack.extentreports.Status;
 import com.parallel.universe.base.BaseClassApi;
 import com.parallel.universe.config.ConfigReader;
 import com.parallel.universe.models.JwtTokenRequest;
@@ -10,6 +11,8 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import io.restassured.specification.RequestSpecification;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -23,6 +26,7 @@ import static io.restassured.RestAssured.given;
 public class APITestScenarios extends BaseClassApi {
 
     //JwtTokenResponse jwtTokenResponse;
+    public static Logger log;
 private ConfigReader configReader = new ConfigReader();
 String HeaderAuth1 = configReader.getApiHeaderAuth1();
 String HeaderAuth2 = configReader.getApiHeaderAuth2();
@@ -72,6 +76,10 @@ String CompanyID = configReader.getApiCompany();
     @Test
     public void DashboardLayoutFinmarkCS()
     {
+        log = LogManager.getLogger(APITestScenarios.class);
+        log.info("API Finmark Dashboard Layout Test Start");
+        logger = extent.createTest("Verifying Test", "Test to validate correct scenario ");
+        logger.log(Status.INFO, "Starting test of API Dashboard layout");
         System.out.println("I am in Dashboard layout of finmark");
 
         given()
@@ -86,6 +94,9 @@ String CompanyID = configReader.getApiCompany();
                 .statusCode(200)
                 .log()
                 .all();
+        log.info("Status code verified");
+        //Extent com.parallel.universe.base.Report Success Log
+        logger.pass("API Dashboard layout test successful");
     }
 
     @Test

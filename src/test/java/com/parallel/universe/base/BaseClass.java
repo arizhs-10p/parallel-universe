@@ -84,7 +84,7 @@ public class BaseClass {
 public void setupExtentReport()
 {
     //Extent report
-    htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/AhsExtentReport.html");
+    htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/WebTestResults.html");
     extent = new ExtentReports ();
     extent.attachReporter(htmlReporter);
     extent.setSystemInfo("Host Name", "Full Stack QA");
