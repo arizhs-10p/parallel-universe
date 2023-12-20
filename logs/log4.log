@@ -101,3 +101,29 @@
 02:47:12.241 [main] INFO  - JwtToken authentication initialize
 02:47:13.954 [main] INFO  - JwtToken authentication completed
 02:47:13.955 [main] INFO  - API Finmark Dashboard Layout Test Start
+03:09:38.730 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:09:44.464 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:09:44.467 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+03:09:46.020 [TestNG-test=Test-1] INFO  - Status code verified
+03:09:46.802 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:09:48.807 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:09:48.808 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+03:09:50.147 [TestNG-test=Test-1] INFO  - Status code verified
+03:09:50.157 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:09:51.974 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:09:51.977 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+03:09:53.322 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:09:54.945 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:12:03.939 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:12:09.910 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:12:09.914 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+03:12:11.462 [TestNG-test=Test-1] INFO  - Status code verified
+03:12:12.446 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:12:14.315 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:12:14.316 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+03:12:15.545 [TestNG-test=Test-1] INFO  - Status code verified
+03:12:15.549 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:12:17.166 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+03:12:17.167 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+03:12:18.474 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+03:12:20.251 [TestNG-test=Test-1] INFO  - JwtToken authentication completed

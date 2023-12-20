@@ -40,38 +40,15 @@ String CompanyID = configReader.getApiCompany();
 
 
 
-    @Test(dataProvider="Authentication02", dataProviderClass = UtilsReader.class)
-    public void apiTestOne(String emailAddress, String deviceSessionId, String password) {
-
-        System.out.println(emailAddress);
-        System.out.println(deviceSessionId);
-        System.out.println(password);
-
-
-    }
-
-
-
-
-    @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
-    public void DashboardLayoutFinmarkWS(String emailAddress, String deviceSessionId, String password)
-    {
-        System.out.println("I am in testThree method");
-
-               given()
-                       .queryParam("scenarioId",deviceSessionId)
-                       .queryParam("companyId",password)
-                .when()
-                .header(Header1,Header2)
-                .header(Header3,Header4 + jwtTokenResponse.getJwtToken())
-                //.get("https://tst1.finmark.com/api/v2/dashboard-layouts/all")
-                       .get(ApiBaseURL+"v2/dashboard-layouts/all")
-                .then()
-                       .statusCode(400)
-                .log()
-                .all();
-    }
-
+//    @Test(dataProvider="Authentication02", dataProviderClass = UtilsReader.class)
+//    public void apiTestOne(String emailAddress, String deviceSessionId, String password) {
+//
+//        System.out.println(emailAddress);
+//        System.out.println(deviceSessionId);
+//        System.out.println(password);
+//
+//
+//    }
 
 
     @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
