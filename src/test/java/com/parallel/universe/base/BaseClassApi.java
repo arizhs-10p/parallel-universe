@@ -95,21 +95,4 @@ public class BaseClassApi {
         extent.flush();
     }
 
-
-/*
-    @AfterMethod
-    public void closingBrowser(){
-        driver.quit();
-        Reporter.log("Browser closed",true);
-    //Extent report flush
-        extent.flush();
-        System.out.println("extent close");
-
-    }
-
- */
-
-
-
-
 }

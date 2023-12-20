@@ -36,3 +36,68 @@
 16:02:41.632 [TestNG-test=Test-1] INFO  - Chrome browser maximize from base class
 16:02:41.633 [TestNG-test=Test-1] INFO  - Driver initiated
 16:02:42.302 [TestNG-test=Test-1] INFO  - Title verified
+16:07:51.704 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:07:57.193 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:07:57.202 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+16:07:58.475 [TestNG-test=Test-1] INFO  - Status code verified
+16:07:58.507 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:08:00.663 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:08:24.149 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:08:28.597 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:08:28.606 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+16:08:29.941 [TestNG-test=Test-1] INFO  - Status code verified
+16:08:29.956 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:08:31.720 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:11:19.238 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:11:24.399 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:11:24.406 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+16:11:25.824 [TestNG-test=Test-1] INFO  - Status code verified
+16:11:25.845 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:11:27.442 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:16:10.825 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:16:17.807 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:16:17.816 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+16:16:20.365 [TestNG-test=Test-1] INFO  - Status code verified
+16:16:20.381 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:16:22.184 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:25:27.447 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:25:33.321 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+16:25:33.326 [TestNG-test=Test-1] INFO  - API Finmark Dashboard Layout Test Start
+16:25:35.701 [TestNG-test=Test-1] INFO  - Status code verified
+16:25:35.734 [TestNG-test=Test-1] INFO  - JwtToken authentication initialize
+16:25:37.545 [TestNG-test=Test-1] INFO  - JwtToken authentication completed
+01:51:59.430 [main] INFO  - JwtToken authentication initialize
+01:52:04.894 [main] INFO  - JwtToken authentication completed
+01:52:04.899 [main] INFO  - API Finmark Dashboard Layout Test Start
+01:52:06.115 [main] INFO  - Status code verified
+01:52:06.132 [main] INFO  - JwtToken authentication initialize
+01:52:07.696 [main] INFO  - JwtToken authentication completed
+02:10:42.739 [main] INFO  - JwtToken authentication initialize
+02:10:47.895 [main] INFO  - JwtToken authentication completed
+02:10:47.900 [main] INFO  - API Finmark Dashboard Layout Test Start
+02:10:49.010 [main] INFO  - JwtToken authentication initialize
+02:10:50.514 [main] INFO  - JwtToken authentication completed
+02:10:50.516 [main] INFO  - API Finmark Dashboard Layout Test Start
+02:10:51.486 [main] INFO  - JwtToken authentication initialize
+02:10:53.000 [main] INFO  - JwtToken authentication completed
+02:10:53.001 [main] INFO  - API Finmark Dashboard Layout Test Start
+02:19:13.261 [main] INFO  - JwtToken authentication initialize
+02:19:18.266 [main] INFO  - JwtToken authentication completed
+02:19:18.268 [main] INFO  - API Finmark Dashboard Layout Test Start
+02:19:19.427 [main] INFO  - Status code verified
+02:19:19.440 [main] INFO  - JwtToken authentication initialize
+02:19:21.230 [main] INFO  - JwtToken authentication completed
+02:19:21.233 [main] INFO  - API Finmark Dashboard Layout Test Start
+02:40:23.486 [main] INFO  - JwtToken authentication initialize
+02:40:28.959 [main] INFO  - JwtToken authentication completed
+02:40:28.973 [main] INFO  - JwtToken authentication initialize
+02:40:30.700 [main] INFO  - JwtToken authentication completed
+02:40:30.706 [main] INFO  - JwtToken authentication initialize
+02:40:32.289 [main] INFO  - JwtToken authentication completed
+02:47:05.464 [main] INFO  - JwtToken authentication initialize
+02:47:10.808 [main] INFO  - JwtToken authentication completed
+02:47:10.812 [main] INFO  - API Finmark Dashboard Layout Test Start
+02:47:12.229 [main] INFO  - Status code verified
+02:47:12.241 [main] INFO  - JwtToken authentication initialize
+02:47:13.954 [main] INFO  - JwtToken authentication completed
+02:47:13.955 [main] INFO  - API Finmark Dashboard Layout Test Start

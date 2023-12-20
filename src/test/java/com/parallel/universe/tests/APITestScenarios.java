@@ -39,8 +39,8 @@ String ScenarioID = configReader.getApiScenario();
 String CompanyID = configReader.getApiCompany();
 
 
-/*
-    @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
+
+    @Test(dataProvider="Authentication02", dataProviderClass = UtilsReader.class)
     public void apiTestOne(String emailAddress, String deviceSessionId, String password) {
 
         System.out.println(emailAddress);
@@ -50,9 +50,9 @@ String CompanyID = configReader.getApiCompany();
 
     }
 
- */
 
-/*
+
+
     @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
     public void DashboardLayoutFinmarkWS(String emailAddress, String deviceSessionId, String password)
     {
@@ -72,7 +72,35 @@ String CompanyID = configReader.getApiCompany();
                 .all();
     }
 
- */
+
+
+    @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
+    public void DashboardLayoutFinmarkDP(String ScenarioID, String CompanyID)
+    {
+        log = LogManager.getLogger(APITestScenarios.class);
+        log.info("API Finmark Dashboard Layout Test Start");
+        logger = extent.createTest("Verifying Test", "Test to validate correct scenario ");
+        logger.log(Status.INFO, "Starting test of API Dashboard layout");
+        System.out.println("I am in Dashboard layout of finmark");
+
+        given()
+                .queryParam("scenarioId",ScenarioID)
+                .queryParam("companyId",CompanyID)
+                .when()
+                .header(Header1,Header2)
+                .header(Header3,Header4 + jwtTokenResponse.getJwtToken())
+                //.get("https://tst1.finmark.com/api/v2/dashboard-layouts/all")
+                .get(ApiBaseURL+"v2/dashboard-layouts/all")
+                .then()
+                .statusCode(200)
+                .log()
+                .all();
+        log.info("Status code verified");
+        //Extent com.parallel.universe.base.Report Success Log
+        logger.pass("API Dashboard layout test successful");
+    }
+
+
     @Test
     public void DashboardLayoutFinmarkCS()
     {

@@ -25,9 +25,17 @@ public class UtilsReader {
     @DataProvider(name = "Authentication")
     public Object[][] Authentication() throws Exception{
 
-        Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\Administrator\\seleniumWD\\parallel-universe\\src\\test\\resources\\Testdata.xlsx","Sheet1");
+        Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\Administrator\\seleniumWD\\parallel-universe\\src\\test\\resources\\Testdata.xlsx","Api");
 
         return (testObjArray);
+
+    }
+    @DataProvider(name = "Authentication02")
+    public Object[][] Authentication02() throws Exception{
+
+        Object[][] testObjArray02 = ExcelUtils.getTableArray("C:\\Users\\Administrator\\seleniumWD\\parallel-universe\\src\\test\\resources\\Testdata.xlsx","Sheet1");
+
+        return (testObjArray02);
 
     }
 }

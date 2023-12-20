@@ -44,7 +44,7 @@ public class ExcelUtils {
 
             // you can write a function as well to get Column count
 
-            int totalCols = 3;
+            int totalCols = 2;
 
             tabArray = new String[totalRows][totalCols];
 
@@ -91,7 +91,7 @@ public class ExcelUtils {
 
             int dataType = Cell.getCellType();
 
-            if (dataType == 3) {
+            if (dataType == 2) {
 
                 return "";
 
