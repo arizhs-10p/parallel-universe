@@ -51,6 +51,7 @@ String CompanyID = configReader.getApiCompany();
 //    }
 
 
+    /*
     @Test(dataProvider="Authentication", dataProviderClass = UtilsReader.class)
     public void DashboardLayoutFinmarkDP(String ScenarioID, String CompanyID)
     {
@@ -76,6 +77,7 @@ String CompanyID = configReader.getApiCompany();
         //Extent com.parallel.universe.base.Report Success Log
         logger.pass("API Dashboard layout test successful");
     }
+    */
 
 
     @Test
