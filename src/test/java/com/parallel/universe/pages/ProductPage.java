@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 public class ProductPage {
     private WebDriver driver;
 
-    By ProductSelect = By.id("item_4_title_link");
+    By ProductSelect = By.id("item_1_title_link");
 
 
     public ProductPage(WebDriver driver)

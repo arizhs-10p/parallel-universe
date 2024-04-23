@@ -33,16 +33,21 @@ public class BaseClass {
     protected ExtentReports extent;
     protected ExtentTest logger;
     @BeforeMethod
-   /* @Parameters("browser")
+    @Parameters("browser")
     public void parameterizedTest(String browser) {
+        log = LogManager.getLogger(SauceDemoWebTest.class);
         if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
+            log.info("Firefox Browser initiated from base class");
             driver.manage().window().maximize();
+            log.info("Firefox Browser maximize from base class");
             System.out.println("Browser Started :" + browser);
 
         } else if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
+            log.info("Chrome Browser initiated from base class");
             driver.manage().window().maximize();
+            log.info("Chrome Browser maximize from base class");
             System.out.println("Browser Started :" + browser);
         }
 
@@ -50,9 +55,9 @@ public class BaseClass {
 
     }
 
-    */
 
-        public void setupBrowser(){
+
+     /*   public void setupBrowser(){
         log = LogManager.getLogger(SauceDemoWebTest.class);
         //Reporter.log("Browser session started",true);
         //create ExtentReports and attach reporter(s)
@@ -61,10 +66,10 @@ public class BaseClass {
         //extent.attachReporter(htmlReporter);
         //Driver initialization
 
-        driver = new ChromeDriver();
-        log.info("Chrome browser initiated from base class");
-        driver.manage().window().maximize();
-        log.info("Chrome browser maximize from base class");
+        //driver = new ChromeDriver();
+        log.info("Browser initiated from base class");
+        //driver.manage().window().maximize();
+        log.info("Browser maximize from base class");
 //        //Extent report
 //        htmlReporter = new ExtentSparkReporter(System.getProperty("user.dir") +"/test-output/AhsExtentReport.html");
 //        extent = new ExtentReports ();
@@ -79,6 +84,8 @@ public class BaseClass {
 //        htmlReporter.config().setTheme(Theme.STANDARD);
     }
 
+      */
+
 
     @BeforeClass
 public void setupExtentReport()
@@ -88,7 +95,7 @@ public void setupExtentReport()
     extent = new ExtentReports ();
     extent.attachReporter(htmlReporter);
     extent.setSystemInfo("Host Name", "Full Stack QA");
-    extent.setSystemInfo("Environment", "Automation Testing");
+    extent.setSystemInfo("Environment", "Web Automation Testing");
     extent.setSystemInfo("User Name", "Ariz Hussain Siddiqui");
 
     htmlReporter.config().setDocumentTitle("Title of the com.parallel.universe.base.Report Comes here");
