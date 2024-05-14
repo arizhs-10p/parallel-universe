@@ -28,7 +28,8 @@ public class SauceDemoWebTestFirefox {
     String usernameInvalid = configReader.getUsernameInvalid();
     String passwordInvalid = configReader.getPasswordInvalid();
 
-    @BeforeClass
+
+     @BeforeClass
     public void setup() {
         driver = new FirefoxDriver();
         driver.get("https://www.saucedemo.com/v1/");
@@ -40,6 +41,8 @@ public class SauceDemoWebTestFirefox {
             driver.quit();
         }
     }
+
+
 
     @Test
     public void loginTest() {

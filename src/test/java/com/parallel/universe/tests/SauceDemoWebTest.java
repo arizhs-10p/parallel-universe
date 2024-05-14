@@ -1,15 +1,14 @@
 package com.parallel.universe.tests;
 
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.parallel.universe.base.BaseClass;
 import com.parallel.universe.config.ConfigReader;
+import com.parallel.universe.pages.LoginPage;
+import com.parallel.universe.pages.ProductPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import com.parallel.universe.pages.LoginPage;
-import com.parallel.universe.pages.ProductPage;
 
 public class SauceDemoWebTest extends BaseClass {
 
@@ -35,6 +34,7 @@ public class SauceDemoWebTest extends BaseClass {
         logger.log(Status.INFO, "Starting test loginTest");
         // Open the website
         driver.get(Url3);
+        System.out.println("url3" + Url3);
         // Verify the title
         String expectedTitle = "Swag Labs";
         String actualTitle = driver.getTitle();
@@ -57,7 +57,7 @@ public class SauceDemoWebTest extends BaseClass {
         logger.log(Status.INFO, "Starting test loginTestFailed");
         // Open the website
         driver.get(Url3);
-       logger.fail("Sauce Demo, Login UnSuccessful because of wrong title");
+        logger.fail("Sauce Demo, Login UnSuccessful because of wrong title");
         // Verify the title
         String expectedTitle = "Swag Labs";
         String actualTitle = driver.getTitle();
@@ -65,7 +65,7 @@ public class SauceDemoWebTest extends BaseClass {
         // Perform login
         loginPage.login(username, password);
         //Extent com.parallel.universe.base.Report Success Log
-       // extlogin.pass("Sauce Demo, Login UnSuccessful because of wrong title");
+        // extlogin.pass("Sauce Demo, Login UnSuccessful because of wrong title");
 
         // Add assertions or further verifications as needed
         // For example, you can verify that the login was successful by checking the presence of a dashboard element.
@@ -75,7 +75,7 @@ public class SauceDemoWebTest extends BaseClass {
     public void productSelect() throws InterruptedException {
         loginTest();
         ProductPage productPage = new ProductPage(driver);
-        Thread.sleep(5000);
+        //Thread.sleep(5000);
         productPage.setProductSelect();
 
     }

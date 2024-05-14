@@ -37,6 +37,7 @@ public class BaseClassApi {
         String HeaderAuth1 = configReader.getApiHeaderAuth1();
         String HeaderAuth2 = configReader.getApiHeaderAuth2();
         String ApiBaseURL = configReader.getBaseApiUrl();
+        String AuthenticateAPIRoute = configReader.getAuthenticateApiRoute();
         String EmailAddress = configReader.getApiEmailAddress();
         String DeviceSessionId = configReader.getApiDeviceSessionId();
         String Password = configReader.getApiPassword();
@@ -63,7 +64,7 @@ public class BaseClassApi {
         log.info("JwtToken authentication initialize");
         JwtTokenRequest jwtTokenRequest = new JwtTokenRequest(EmailAddress, DeviceSessionId, Password);
         Response response = given().header(HeaderAuth1 , HeaderAuth2)
-                .body(jwtTokenRequest).when().post(ApiBaseURL+"v1/authenticate").then().extract().response();
+                .body(jwtTokenRequest).when().post(ApiBaseURL+AuthenticateAPIRoute).then().extract().response();
 
         jwtTokenResponse = response.getBody().as(new TypeRef<JwtTokenResponse>() {});
         log.info("JwtToken authentication completed");

@@ -12,6 +12,7 @@ public class JwtTokenResponse {
     public String fullName;
     public String userEmail;
     public Integer userId;
+    public Integer selectedCompanyId;
     public String creationDate;
     public Boolean hasEmployeeAccess;
     public String country;

@@ -3,7 +3,7 @@ package com.parallel.universe.config;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
+import static com.parallel.universe.util.Constant.*;
 import static java.lang.System.getProperty;
 
 public class ConfigReader {
@@ -11,6 +11,8 @@ public class ConfigReader {
 
     public ConfigReader() {
         properties = new Properties();
+        var env = System.getenv("SauceURL");
+        System.out.println("testenv "+ env);
         try {
             FileInputStream input = new FileInputStream("src/test/resources/config.properties");
             properties.load(input);
@@ -28,34 +30,33 @@ public class ConfigReader {
         return properties.getProperty("Url2");
     }
     public String getBaseUrl3() {
-        return properties.getProperty("Url3");
+        return System.getenv(WEB_BASE_URL);
     }
 
     public String getUsername() {
-        return properties.getProperty("username");
+        return System.getenv(WEB_USERNAME);
     }
 
     public String getPassword() {
-        return properties.getProperty("password");
+        return System.getenv(WEB_PASSWORD);
     }
     public String getUsernameInvalid() {
-        return properties.getProperty("usernameInvalid");
+        return System.getenv(WEB_USERNAME_INVALID);
     }
 
     public String getPasswordInvalid() {
-        return properties.getProperty("passwordInvalid");
+        return System.getenv(WEB_PASSWORD_INVALID);
     }
 
     //API
-    public String getBaseApiUrl() {
-        return properties.getProperty("apiBaseUrl");
-    }
+    public String getBaseApiUrl() { return System.getenv(API_BASE_URL); }
+    public String getAuthenticateApiRoute() { return System.getenv(AUTHENTICATE_API_ROUTE); }
     public String getApiEmailAddress() {
-        return properties.getProperty("ApiEmailAddress");
+        return System.getenv(API_EMAIL);
     }
 
-    public String getApiDeviceSessionId(){return properties.getProperty("ApiDeviceSessionId");}
-    public String getApiPassword(){return properties.getProperty("ApiPassword");}
+    public String getApiDeviceSessionId(){return System.getenv(API_DEVICE_ID);}
+    public String getApiPassword(){return System.getenv(API_PASSWORD);}
 
     public String getApiHeaderAuth1(){return properties.getProperty("HeaderAuth1");}
     public String getApiHeaderAuth2(){return properties.getProperty("HeaderAuth2");}
@@ -66,8 +67,10 @@ public class ConfigReader {
     public String getApiHeader3(){return properties.getProperty("Header3");}
     public String getApiHeader4(){return properties.getProperty("Header4");}
 
-    public String getApiScenario(){return properties.getProperty("scenarioId");}
-    public String getApiCompany(){return properties.getProperty("companyId");}
+    public String getApiScenario(){return System.getenv(SCENARIO_ID_QUERY_PARAM);}
+    public String getApiCompany(){return System.getenv(COMPANY_ID_QUERY_PARAM);}
+
+    public String getDashboardApiRoute(){return System.getenv(DASHBOARD_API_ROUTE);}
 
 
     //Appium

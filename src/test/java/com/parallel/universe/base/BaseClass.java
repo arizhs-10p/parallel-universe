@@ -17,6 +17,7 @@ import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.*;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
@@ -24,9 +25,7 @@ import static io.restassured.RestAssured.given;
 public class BaseClass {
 
     protected WebDriver driver;
-    //ExtentSparkReporter htmlReporter;
-    //public static ExtentReports extent;
-    //protected ExtentTest test1, test2;
+
     public static Logger log;
 
     ExtentSparkReporter htmlReporter;
@@ -38,6 +37,7 @@ public class BaseClass {
         log = LogManager.getLogger(SauceDemoWebTest.class);
         if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
             log.info("Firefox Browser initiated from base class");
             driver.manage().window().maximize();
             log.info("Firefox Browser maximize from base class");
@@ -45,13 +45,13 @@ public class BaseClass {
 
         } else if (browser.equalsIgnoreCase("chrome")) {
             driver = new ChromeDriver();
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             log.info("Chrome Browser initiated from base class");
             driver.manage().window().maximize();
             log.info("Chrome Browser maximize from base class");
             System.out.println("Browser Started :" + browser);
         }
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
 
@@ -100,7 +100,6 @@ public void setupExtentReport()
 
     htmlReporter.config().setDocumentTitle("Title of the com.parallel.universe.base.Report Comes here");
     htmlReporter.config().setReportName("Name of the com.parallel.universe.base.Report Comes here");
-    //htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
     htmlReporter.config().setTheme(Theme.STANDARD);
 }
 /*
@@ -119,12 +118,10 @@ public void setupExtentReport()
     @AfterMethod
     public void getResult(ITestResult result){
         if(result.getStatus() == ITestResult.FAILURE){
-            //logger.log(Status.FAIL, "Test Case Failed is "+result.getName());
             //MarkupHelper is used to display the output in different colors
             logger.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
             logger.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
         }else if(result.getStatus() == ITestResult.SKIP){
-            //logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
             logger.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
         }
         driver.quit();
