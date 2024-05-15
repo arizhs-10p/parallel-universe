@@ -3,4 +3,5 @@ test-output/
 .idea/
 /AppiumLog.txt
 logs/
+.env
 
