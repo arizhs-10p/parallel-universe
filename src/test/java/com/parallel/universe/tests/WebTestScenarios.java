@@ -1,11 +1,9 @@
 package com.parallel.universe.tests;
 
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.parallel.universe.base.BaseClass;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.Status;
-import com.parallel.universe.base.Report;
 import com.parallel.universe.config.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -28,11 +26,11 @@ public class WebTestScenarios extends BaseClass {
     String passwordInvalid = configReader.getPasswordInvalid();
 //Calling out configuration things - Ends
 
-  //  @BeforeMethod
+    //  @BeforeMethod
     //public void beforeMethod()
     //{
-      //  System.out.println("I am in beforeMetod - classOne");
-        //driver = new ChromeDriver();
+    //  System.out.println("I am in beforeMetod - classOne");
+    //driver = new ChromeDriver();
     //}
 
     /*
@@ -59,10 +57,9 @@ public class WebTestScenarios extends BaseClass {
 
      */
 
-//Report report = new Report();
+    //Report report = new Report();
     @Test(priority = 0, description = "Test Done 11")
-    public void testTwo()
-    {
+    public void testTwo() {
         logger = extent.createTest("Open Yahoo Website", "Test to validate website opening of yahoo ");
         logger.log(Status.INFO, "Starting test case testTwo");
         driver.get(Url2);
@@ -72,7 +69,7 @@ public class WebTestScenarios extends BaseClass {
     }
 
     @Test(priority = 1, description = "Test Done 22")
-    public  void testThree() throws InterruptedException {
+    public void testThree() throws InterruptedException {
         logger = extent.createTest("Open SauceDemo", "Test to validate Valid Credentials");
         logger.log(Status.INFO, "Starting test case testThree");
         driver.get(Url3);

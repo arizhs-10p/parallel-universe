@@ -1,13 +1,11 @@
 package com.parallel.universe.tests;
 
-import com.aventstack.extentreports.Status;
 import com.parallel.universe.config.ConfigReader;
 import com.parallel.universe.pages.LoginPage;
 import com.parallel.universe.pages.ProductPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -29,7 +27,7 @@ public class SauceDemoWebTestFirefox {
     String passwordInvalid = configReader.getPasswordInvalid();
 
 
-     @BeforeClass
+    @BeforeClass
     public void setup() {
         driver = new FirefoxDriver();
         driver.get("https://www.saucedemo.com/v1/");
@@ -41,7 +39,6 @@ public class SauceDemoWebTestFirefox {
             driver.quit();
         }
     }
-
 
 
     @Test

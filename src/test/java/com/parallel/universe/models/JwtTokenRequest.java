@@ -10,11 +10,11 @@ public class JwtTokenRequest {
     String emailAddress;
     String deviceSessionId;
     String password;
-    public JwtTokenRequest(String emailAddress, String deviceSessionId, String password)
-    {
-        this.emailAddress=emailAddress;
-        this.deviceSessionId=deviceSessionId;
-        this.password=password;
+
+    public JwtTokenRequest(String emailAddress, String deviceSessionId, String password) {
+        this.emailAddress = emailAddress;
+        this.deviceSessionId = deviceSessionId;
+        this.password = password;
     }
 
 }

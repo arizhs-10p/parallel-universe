@@ -18,5 +18,4 @@ public class JwtTokenResponse {
     public String country;
 
 
-
 }

@@ -82,7 +82,6 @@ public class ExcelUtils {
     }
 
 
-
     public static String getCellData(int RowNum, int ColNum) throws Exception {
 
         try {
@@ -102,7 +101,7 @@ public class ExcelUtils {
                 return CellData;
 
             }
-        } catch(Exception e){
+        } catch (Exception e) {
             System.out.println(e.getMessage());
             throw (e);
         }

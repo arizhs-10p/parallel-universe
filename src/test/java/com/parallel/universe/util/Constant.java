@@ -18,4 +18,5 @@ public class Constant {
     public static final String HEADER_BEARER = "Bearer ";
     public static final String DASHBOARD_API_ROUTE = "dashboardRoute";
     public  static final String AUTHENTICATE_API_ROUTE = "authenticateRoute";
+    public static final String TESTDATA_EXCEL_FILE = "testDataFile";
 }
