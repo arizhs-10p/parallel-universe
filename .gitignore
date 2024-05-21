@@ -4,6 +4,6 @@ test-output/
 /AppiumLog.txt
 logs/
 .env
-*.xlsx
+*xlsx
 
 
