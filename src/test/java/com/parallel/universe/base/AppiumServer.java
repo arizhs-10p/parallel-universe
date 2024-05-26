@@ -1,8 +1,11 @@
 package com.parallel.universe.base;
 
+import com.parallel.universe.config.ConfigReader;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
 import io.appium.java_client.service.local.flags.GeneralServerFlag;
+import static com.parallel.universe.util.Constant.*;
 
 import java.io.File;
 
@@ -10,10 +13,13 @@ public class AppiumServer {
     static AppiumDriverLocalService server;
     static void setInstance()
     {
+        ConfigReader configReader = new ConfigReader();
+        String appiumJSPath = configReader.appiumJSPath();
+        String appiumNodePath = configReader.appiumNodePath();
         AppiumServiceBuilder builder = new AppiumServiceBuilder();
         System.out.println("t");
-        builder.withAppiumJS(new File("C:\\Users\\Administrator\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-        .usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
+        builder.withAppiumJS(new File(appiumJSPath))
+        .usingDriverExecutable(new File(appiumNodePath))
         .usingPort(4723)
         .withArgument(GeneralServerFlag.LOCAL_TIMEZONE)
         .withLogFile(new File("AppiumLog.txt"))

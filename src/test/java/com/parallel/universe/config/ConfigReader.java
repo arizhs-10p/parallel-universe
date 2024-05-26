@@ -114,6 +114,12 @@ public class ConfigReader {
     }
 
     //Appium
+    public String appiumJSPath(){
+        return System.getenv(APPIUM_JS_PATH);
+    }
+    public String appiumNodePath(){
+        return System.getenv(APPIUM_NODE_PATH);
+    }
     public String GetAppiumServerURL() {
         return properties.getProperty("appiumServerUrl");
     }

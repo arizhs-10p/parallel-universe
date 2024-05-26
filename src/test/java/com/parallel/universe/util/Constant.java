@@ -19,4 +19,6 @@ public class Constant {
     public static final String DASHBOARD_API_ROUTE = "dashboardRoute";
     public  static final String AUTHENTICATE_API_ROUTE = "authenticateRoute";
     public static final String TESTDATA_EXCEL_FILE = "testDataFile";
+    public static final String APPIUM_JS_PATH = "appiumJSPath";
+    public static final String APPIUM_NODE_PATH = "appiumNodePath";
 }
