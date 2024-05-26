@@ -13,7 +13,7 @@ All the environment variables related to JAVA_HOME, APPIUM and Maven should be c
 Environment variables are set with intellij
 ConfigReader should be utilize to retain the env variable value
 Constant.java file is used to load the value of env variable which was set inside intellij
-
+--test
 
 *Important Links:
 Saucedemo used for web, apkdemos public apk used for android appium
