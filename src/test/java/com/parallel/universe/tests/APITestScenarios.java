@@ -32,15 +32,6 @@ public class APITestScenarios extends BaseClassApi {
     String dashboardAPIRoute = configReader.getDashboardApiRoute();
 
 
-//    @Test(dataProvider="Authentication02", dataProviderClass = UtilsReader.class)
-//    public void apiTestOne(String emailAddress, String deviceSessionId, String password) {
-//
-//        System.out.println(emailAddress);
-//        System.out.println(deviceSessionId);
-//        System.out.println(password);
-//
-//
-//    }
 
 
     @Test(dataProvider = "Authentication", dataProviderClass = UtilsReader.class)

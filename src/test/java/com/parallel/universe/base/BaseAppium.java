@@ -64,9 +64,6 @@ public class BaseAppium {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
-//        } catch (Exception exception) {
-//            System.out.println(exception.getMessage());
-//        }
         return driver;
     }
     @BeforeClass
@@ -82,7 +79,6 @@ public class BaseAppium {
 
         htmlReporter2.config().setDocumentTitle("Title of the com.parallel.universe.base.Report Comes here");
         htmlReporter2.config().setReportName("Name of the com.parallel.universe.base.Report Comes here");
-        //htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
         htmlReporter2.config().setTheme(Theme.STANDARD);
     }
 
@@ -92,13 +88,11 @@ public class BaseAppium {
     {
         if(result.getStatus() == ITestResult.FAILURE)
         {
-            //logger.log(Status.FAIL, "Test Case Failed is "+result.getName());
             //MarkupHelper is used to display the output in different colors
             logger2.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
             logger2.log(Status.FAIL, MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
         }
         else if(result.getStatus() == ITestResult.SKIP){
-            //logger.log(Status.SKIP, "Test Case Skipped is "+result.getName());
             logger2.log(Status.SKIP, MarkupHelper.createLabel(result.getName() + " - Test Case Skipped", ExtentColor.ORANGE));
         }
     }
@@ -111,7 +105,6 @@ public class BaseAppium {
     }
     @AfterTest
     public void endReport(){
-        //driver.quit();
         extent2.flush();
     }
 }

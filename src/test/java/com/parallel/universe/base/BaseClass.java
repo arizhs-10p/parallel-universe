@@ -82,7 +82,6 @@ public class BaseClass {
 
     @AfterTest
     public void endReport() {
-        //driver.quit();
         extent.flush();
     }
 

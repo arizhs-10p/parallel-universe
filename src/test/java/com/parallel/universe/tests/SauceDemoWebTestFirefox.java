@@ -90,8 +90,8 @@ public class SauceDemoWebTestFirefox {
     public void productSelect() throws InterruptedException {
         loginTest();
         ProductPage productPage = new ProductPage(driver);
-        Thread.sleep(5000);
-        productPage.setProductSelect();
+        productPage.clickProduct();
+       // productPage.setProductSelect();
 
     }
 
